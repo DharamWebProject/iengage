@@ -6,9 +6,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
       <div className="container">
-        {/* Logo */}
         <Link to="/" className="navbar-brand left_items">
-          <img src="/logo.png" alt="Logo" />
+          <img src="public/logo.png" alt="Logo" />
         </Link>
 
         {/* Toggle button for small screens */}
