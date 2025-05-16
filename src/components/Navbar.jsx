@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container">
         {/* Logo */}
         <Link to="/" className="navbar-brand left_items">
-          <img src="/logo.png" alt="Logo" />
+          <img src="/iengage/logo.png" alt="Logo" />
         </Link>
 
         {/* Toggle button for small screens */}
