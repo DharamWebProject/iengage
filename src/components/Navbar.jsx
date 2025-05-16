@@ -8,6 +8,7 @@ const Navbar = () => {
       <div className="container">
         <Link to="/" className="navbar-brand left_items">
          <img src="https://dharamwebproject.github.io/iengage/logo.png" alt="Logo" />
+          <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Logo" />
         </Link>
 
         {/* Toggle button for small screens */}
