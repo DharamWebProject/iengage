@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="col-md-3">
           <h5 className="mb-4">About Us</h5>
           <p className="text-white" style={{ color: "#fff" }}>
-            We help you find the best plots, flats, and investment properties with trust and transparency.
+          Whether you want to build a brand or increase your sales, we’ve got your back. We drive your customer from a visitors into loyal customers.
           </p>
         </div>
 
