@@ -1,14 +1,15 @@
 import React from 'react';
-
+import ImageSlider from './ImageSlider';
 const Home = () => {
  
-  const myName = "Dharam";
+  const myName = "Dharam";g
   const myMessage = "Hello Welocome";
   return (
     <>
+    <ImageSlider />
       <div className="container-fluid">
         <div className="container">
-        <h1>Home Page</h1>
+        <h1>Home Page new</h1>
         <h1>My Name is {myName}!</h1>
         <p>{myMessage}</p>
       </div>
