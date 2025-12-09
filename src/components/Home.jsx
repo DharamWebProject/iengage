@@ -2,7 +2,7 @@ import React from 'react';
 import ImageSlider from './ImageSlider';
 const Home = () => {
  
-  const myName = "Dharam";
+  const myName = "Dharam K";
   const myMessage = "Hello Welocome";
   return (
     <>
