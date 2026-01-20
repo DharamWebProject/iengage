@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';  // Navbar.css ko import karo
+import './Navbar.css';
+import { Container } from 'react-bootstrap';
 
-const Navbar = () => {
+{/*const Navbar = ( props) => {*/}
+{/* function Navbar(props) {  function use*/}
+   const Navbar = ({ props }) => { 
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
       <div className="container">
@@ -10,37 +14,36 @@ const Navbar = () => {
           <img src="/iengage/logo.png" alt="Logo" />
         </Link>
 
-        {/* Toggle button for small screens */}
+        {/* Toggle button */}
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navbar Links */}
+        {/* Email show */}
+        <Container className="text-white me-3">
+          Email: {props.email} |  Mobile: {props.phone}
+        </Container>
+
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
-                Home
-              </Link>
+              <Link className="nav-link active" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                About
-              </Link>
+              <Link className="nav-link" to="/about">About</Link>
+            </li>
+          <li className="nav-item">
+              <Link className="nav-link" to="/blog">Blog</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-                Contact
-              </Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </li>
+
           </ul>
         </div>
       </div>
